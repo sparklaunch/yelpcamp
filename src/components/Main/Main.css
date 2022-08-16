@@ -1,20 +1,60 @@
 .Main {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 55% 45%;
 }
 .left {
-    display: inline-block;
     background-color: rgb(248, 244, 238);
-    width: 55vw;
-    height: 100vh;
+    padding: 10% 20%;
 }
 .right {
-    display: inline-block;
     background-image: url("../../assets/HeroImageNarrow.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    width: 45vw;
-    height: 100vh;
+}
+.logo {
+    margin-bottom: 100px;
+}
+.header {
+    margin-bottom: 10px;
+}
+.header h1 {
+    font-size: 3rem;
+}
+.description {
+    margin-bottom: 15px;
+}
+.description p {
+    line-height: 1.5;
+    color: rgb(84, 80, 75);
+}
+.features {
+    margin-bottom: 15px;
+}
+.view-campgrounds-button {
+    margin-bottom: 30px;
+}
+.view-campgrounds-button button {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.view-campgrounds-button button:hover {
+    opacity: 0.8;
+}
+.partner p {
+    color: rgb(65, 65, 65);
+    margin-bottom: 10px;
+}
+.partner-logos {
+    display: flex;
+    align-items: center;
 }
