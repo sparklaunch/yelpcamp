@@ -1,0 +1,20 @@
+.Main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.left {
+    display: inline-block;
+    background-color: rgb(248, 244, 238);
+    width: 55vw;
+    height: 100vh;
+}
+.right {
+    display: inline-block;
+    background-image: url("../../assets/HeroImageNarrow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 45vw;
+    height: 100vh;
+}
