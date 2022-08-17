@@ -40,5 +40,42 @@
                 }
             }
         }
+        .hamburger-menu {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .Navigation {
+        .left {
+            .home-link {
+                p {
+                    display: none;
+                }
+            }
+        }
+        .right {
+            .login {
+                display: none;
+            }
+            .signup {
+                display: none;
+            }
+            .hamburger-menu {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(247, 242, 233);
+                border-radius: 10px;
+                cursor: pointer;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
     }
 }

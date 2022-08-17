@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logo.svg";
+import hamburger from "../../assets/Hamburger.svg";
 import "./Navigation.scss";
 
 function Navigation() {
@@ -27,6 +28,9 @@ function Navigation() {
                     <Link to="/signup">
                         <button>Create an account</button>
                     </Link>
+                </div>
+                <div className="hamburger-menu">
+                    <img src={hamburger} alt="Hamburger Menu" />
                 </div>
             </div>
         </div>
