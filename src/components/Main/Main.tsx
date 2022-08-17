@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./Main.scss";
 import Feature from "../Feature/Feature";
 import logo from "../../assets/Logo.svg";
 import airbnb from "../../assets/Airbnb.svg";

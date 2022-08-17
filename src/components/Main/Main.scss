@@ -1,0 +1,111 @@
+.Main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    .left {
+        background-color: rgb(248, 244, 238);
+        padding: 10% 20%;
+    }
+    .right {
+        background-image: url("../../assets/HeroImageNarrow.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .logo {
+        margin-bottom: 100px;
+    }
+    .header {
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        font-size: 3rem;
+    }
+    .description {
+        margin-bottom: 15px;
+    }
+    .description p {
+        line-height: 1.5;
+        color: rgb(84, 80, 75);
+    }
+    .features {
+        margin-bottom: 15px;
+    }
+    .view-campgrounds-button {
+        margin-bottom: 30px;
+    }
+    .view-campgrounds-button button {
+        border: none;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 20px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+    }
+    .view-campgrounds-button button:hover {
+        opacity: 0.8;
+    }
+    .partner p {
+        color: rgb(65, 65, 65);
+        margin-bottom: 10px;
+    }
+    .partner-logos {
+        display: flex;
+        align-items: center;
+    }
+    .tablet-logo {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .Main {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        max-width: 100%;
+        .left {
+            width: 100vw;
+            display: block;
+            padding: 40px;
+            max-width: 100%;
+        }
+        .right {
+            width: 100vw;
+            height: 500px;
+            display: block;
+            background-image: url("../../assets/HeroImageWide.jpg");
+            max-width: 100%;
+        }
+        .tablet-logo {
+            display: block;
+            padding: 40px;
+            background-color: rgb(248, 244, 238);
+        }
+        .logo {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .Main {
+        .header h1 {
+            font-size: 2rem;
+        }
+        .left {
+            padding: 30px;
+        }
+        .tablet-logo {
+            padding: 30px;
+        }
+        .partner-logos {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

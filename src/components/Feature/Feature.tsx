@@ -1,4 +1,4 @@
-import "./Feature.css";
+import "./Feature.scss";
 import checkmark from "../../assets/Checkmark.svg";
 
 function Feature({ text }: { text: string }) {
