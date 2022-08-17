@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
-import { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, useContext } from "react";
 import Layout from "../Layout/Layout";
 import "./Home.scss";
 import magnifier from "../../assets/Search.svg";
+import { CampContext } from "../../Camps";
+import CampItem from "../Camp/Camp";
+import logo from "../../assets/Logo.svg";
 
 function Home() {
+    const camps = useContext(CampContext);
     const [search, setSearch] = useState("");
     const changeHandler = (event: ChangeEvent<HTMLInputElement>) => {
         setSearch(event.target.value);
@@ -39,6 +43,14 @@ function Home() {
                             Or add your own campground
                         </Link>
                     </div>
+                </div>
+                <div className="camps">
+                    {camps.map((camp) => {
+                        return <CampItem key={camp.id} {...camp} />;
+                    })}
+                </div>
+                <div className="footer-logo">
+                    <img src={logo} alt="Logo" />
                 </div>
             </Layout>
         </div>
