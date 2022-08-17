@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import Camp from "../../utils/Camp";
-import "./Camp.scss";
+import "./CampItem.scss";
 
-function CampItem({ name, description, image }: Camp) {
+function CampItem({ id, name, description, image }: Camp) {
     return (
         <div className="CampItem">
             <div className="image">
@@ -14,7 +15,9 @@ function CampItem({ name, description, image }: Camp) {
                 <p>{description}</p>
             </div>
             <div className="view-campground-button">
-                <button>View Campground</button>
+                <Link to={`/campgrounds/${id}`}>
+                    <button>View Campground</button>
+                </Link>
             </div>
         </div>
     );

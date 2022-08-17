@@ -4,7 +4,7 @@ import Layout from "../Layout/Layout";
 import "./Home.scss";
 import magnifier from "../../assets/Search.svg";
 import { CampContext } from "../../Camps";
-import CampItem from "../Camp/Camp";
+import CampItem from "../CampItem/CampItem";
 import logo from "../../assets/Logo.svg";
 
 function Home() {
