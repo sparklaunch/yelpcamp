@@ -1,0 +1,43 @@
+.Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+        display: flex;
+        align-items: center;
+        .logo {
+            margin-right: 30px;
+        }
+        .home-link p {
+            font-weight: bold;
+            color: rgb(68, 68, 68);
+            cursor: pointer;
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        .login {
+            margin-right: 30px;
+            p {
+                color: rgb(68, 68, 68);
+                cursor: pointer;
+            }
+        }
+        .signup {
+            button {
+                border: none;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
