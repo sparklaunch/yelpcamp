@@ -4,6 +4,12 @@
     padding: 30px 120px;
 }
 
+@media all and (max-width: 1024px) {
+    .Layout {
+        padding: 50px;
+    }
+}
+
 @media all and (max-width: 500px) {
     .Layout {
         padding: 30px;

@@ -79,6 +79,9 @@
                 width: 100%;
             }
         }
+        .camps {
+            grid-template-columns: repeat(auto-fill, minmax(45%, auto));
+        }
     }
 }
 
@@ -103,6 +106,9 @@
                     font-size: 1.2rem;
                 }
             }
+        }
+        .camps {
+            grid-template-columns: auto;
         }
     }
 }
