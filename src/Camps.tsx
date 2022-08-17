@@ -10,7 +10,8 @@ let camps: Camp[] = [
         image: "MountUlap.png",
         rate: 104.99,
         detail: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
-        submitterID: 0
+        submitterID: 0,
+        mapImage: "Map.png"
     },
     {
         id: 1,
@@ -20,7 +21,8 @@ let camps: Camp[] = [
         image: "CalaguasIslands.jpg",
         rate: 104.99,
         detail: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
-        submitterID: 0
+        submitterID: 0,
+        mapImage: "Map.png"
     },
     {
         id: 2,
@@ -30,7 +32,8 @@ let camps: Camp[] = [
         image: "OnayBeach.jpg",
         rate: 104.99,
         detail: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
-        submitterID: 0
+        submitterID: 0,
+        mapImage: "Map.png"
     },
     {
         id: 3,
@@ -40,7 +43,8 @@ let camps: Camp[] = [
         image: "SevenSistersWaterfall.jpg",
         rate: 104.99,
         detail: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
-        submitterID: 0
+        submitterID: 0,
+        mapImage: "Map.png"
     },
     {
         id: 4,
@@ -50,7 +54,8 @@ let camps: Camp[] = [
         image: "LatikRiverside.jpg",
         rate: 104.99,
         detail: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
-        submitterID: 0
+        submitterID: 0,
+        mapImage: "Map.png"
     },
     {
         id: 5,
@@ -60,7 +65,8 @@ let camps: Camp[] = [
         image: "BuloySprings.jpg",
         rate: 104.99,
         detail: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
-        submitterID: 0
+        submitterID: 0,
+        mapImage: "Map.png"
     }
 ];
 

@@ -6,6 +6,7 @@ type Camp = {
     rate: number;
     detail: string;
     submitterID: number;
+    mapImage: string;
 };
 
 export default Camp;
