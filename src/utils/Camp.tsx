@@ -3,6 +3,9 @@ type Camp = {
     name: string;
     description: string;
     image: string;
+    rate: number;
+    detail: string;
+    submitterID: number;
 };
 
 export default Camp;

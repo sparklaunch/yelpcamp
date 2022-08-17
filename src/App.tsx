@@ -3,17 +3,20 @@ import Main from "./components/Main/Main";
 import NotFound from "./components/NotFound/NotFound";
 import Home from "./components/Home/Home";
 import { CampContext, camps } from "./Camps";
+import { UserContext, users } from "./Users";
 
 function App() {
     return (
         <CampContext.Provider value={camps}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Main />}></Route>
-                    <Route path="/campgrounds" element={<Home />}></Route>
-                    <Route path="*" element={<NotFound />}></Route>
-                </Routes>
-            </BrowserRouter>
+            <UserContext.Provider value={users}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Main />}></Route>
+                        <Route path="/campgrounds" element={<Home />}></Route>
+                        <Route path="*" element={<NotFound />}></Route>
+                    </Routes>
+                </BrowserRouter>
+            </UserContext.Provider>
         </CampContext.Provider>
     );
 }
