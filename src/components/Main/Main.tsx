@@ -39,6 +39,9 @@ function Main() {
                 </div>
             </div>
             <div className="right"></div>
+            <div className="tablet-logo">
+                <img src={logo} alt="Logo" />
+            </div>
         </div>
     );
 }

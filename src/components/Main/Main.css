@@ -58,3 +58,33 @@
     display: flex;
     align-items: center;
 }
+.tablet-logo {
+    display: none;
+}
+
+@media all and (max-width: 1024px) {
+    .Main {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .left {
+        width: 100vw;
+        display: block;
+        padding: 40px;
+    }
+    .right {
+        width: 100vw;
+        height: 500px;
+        display: block;
+        background-image: url("../../assets/HeroImageWide.jpg");
+    }
+    .tablet-logo {
+        display: block;
+        padding: 40px;
+        background-color: rgb(248, 244, 238);
+    }
+    .logo {
+        display: none;
+    }
+}
