@@ -1,2 +1,65 @@
 .Home {
+    .welcome {
+        width: 100%;
+        background-color: rgb(248, 244, 236);
+        padding: 40px;
+        border-radius: 10px;
+        .welcome-header {
+            margin-bottom: 20px;
+        }
+        .welcome-description {
+            margin-bottom: 20px;
+            width: 50%;
+            p {
+                color: rgb(80, 80, 80);
+                line-height: 1.5;
+            }
+        }
+        .search-form {
+            width: 50%;
+            display: grid;
+            grid-template-columns: auto 80px;
+            margin-bottom: 20px;
+            .search-input {
+                position: relative;
+                input {
+                    width: 95%;
+                    border-color: rgb(195, 195, 195);
+                    border-style: solid;
+                    border-radius: 5px;
+                    padding: 10px;
+                    padding-left: 40px;
+                    font-size: 1.2rem;
+                }
+                img {
+                    position: absolute;
+                    left: 15px;
+                    top: 15px;
+                }
+            }
+            button.search-button {
+                border: none;
+                border-radius: 5px;
+                background-color: black;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .add-campground {
+            a {
+                color: rgb(80, 80, 80);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .Home {
+    }
 }
