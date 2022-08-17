@@ -4,6 +4,7 @@ import logo from "../../assets/Logo.svg";
 import airbnb from "../../assets/Airbnb.svg";
 import booking from "../../assets/Booking.svg";
 import plumGuide from "../../assets/PlumGuide.svg";
+import { Link } from "react-router-dom";
 
 function Main() {
     return (
@@ -27,7 +28,9 @@ function Main() {
                     <Feature text="See locations for all camps." />
                 </div>
                 <div className="view-campgrounds-button">
-                    <button>View Campgrounds</button>
+                    <Link to="/campgrounds">
+                        <button>View Campgrounds</button>
+                    </Link>
                 </div>
                 <div className="partner">
                     <p>Partnered with:</p>
