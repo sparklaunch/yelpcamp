@@ -61,5 +61,38 @@
 
 @media all and (max-width: 1024px) {
     .Home {
+        .welcome {
+            .welcome-description {
+                width: 80%;
+            }
+            .search-form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .Home {
+        .welcome {
+            .welcome-description {
+                width: 100%;
+            }
+            .search-form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .search-input {
+                    input {
+                        width: 100%;
+                    }
+                    margin-bottom: 10px;
+                }
+                button.search-button {
+                    padding: 12px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }
