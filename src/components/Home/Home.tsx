@@ -3,11 +3,11 @@ import { useState, ChangeEvent, useContext } from "react";
 import Layout from "../Layout/Layout";
 import "./Home.scss";
 import magnifier from "../../assets/Search.svg";
-import { CampContext } from "../../Camps";
 import CampItem from "../CampItem/CampItem";
+import CampContext from "../../CampContext";
 
 function Home() {
-    const camps = useContext(CampContext);
+    const { camps } = useContext(CampContext)!;
     const [search, setSearch] = useState("");
     const changeHandler = (event: ChangeEvent<HTMLInputElement>) => {
         setSearch(event.target.value);

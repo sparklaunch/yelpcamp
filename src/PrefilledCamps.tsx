@@ -1,7 +1,6 @@
-import { createContext } from "react";
 import Camp from "./utils/Camp";
 
-let camps: Camp[] = [
+let prefilledCamps: Camp[] = [
     {
         id: 0,
         name: "Mount Ulap",
@@ -70,6 +69,4 @@ let camps: Camp[] = [
     }
 ];
 
-const CampContext = createContext<Camp[]>([]);
-
-export { CampContext, camps };
+export default prefilledCamps;

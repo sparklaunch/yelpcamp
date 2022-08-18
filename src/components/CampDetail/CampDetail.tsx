@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { useParams, Navigate } from "react-router-dom";
-import { CampContext } from "../../Camps";
+import CampContext from "../../CampContext";
 import { UserContext } from "../../Users";
 import Layout from "../Layout/Layout";
 import "./CampDetail.scss";
 
 function CampDetail() {
     const { campID } = useParams();
-    const camps = useContext(CampContext);
+    const { camps } = useContext(CampContext)!;
     const users = useContext(UserContext);
     const campsLength = camps.length;
     if (parseInt(campID!) >= campsLength) {

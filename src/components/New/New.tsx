@@ -9,6 +9,9 @@ function New() {
     const [detail, setDetail] = useState<string>("");
     const submitHandler = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        if (image.length === 0) {
+            setImage("MountUlap.png");
+        }
     };
     return (
         <Layout>
