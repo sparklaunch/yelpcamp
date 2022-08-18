@@ -1,17 +1,35 @@
+import { useContext } from "react";
 import { FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import CampContext from "../../CampContext";
 import Layout from "../Layout/Layout";
 import "./New.scss";
 
 function New() {
+    const navigate = useNavigate();
+    const { camps, setCamps } = useContext(CampContext)!;
     const [name, setName] = useState<string>("");
     const [price, setPrice] = useState<string>("");
     const [image, setImage] = useState<string>("");
     const [detail, setDetail] = useState<string>("");
     const submitHandler = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        if (image.length === 0) {
-            setImage("MountUlap.png");
-        }
+        const ids = camps.map((camp) => camp.id);
+        const nextID = Math.max(...ids) + 1;
+        setCamps([
+            ...camps,
+            {
+                id: nextID,
+                name: name,
+                rate: parseFloat(price),
+                image: image || "MountUlap.png",
+                description: detail,
+                detail: detail,
+                mapImage: "Map.png",
+                submitterID: 0
+            }
+        ]);
+        navigate("/campgrounds");
     };
     return (
         <Layout>
