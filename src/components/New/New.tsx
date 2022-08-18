@@ -34,10 +34,8 @@ function New() {
                         <label htmlFor="price">Price</label>
                         <input
                             required
-                            pattern="^[0-9\.]*$"
-                            title="Only numerics accepted"
                             id="price"
-                            type="text"
+                            type="number"
                             value={price}
                             onChange={(event) => {
                                 setPrice(event.target.value);
