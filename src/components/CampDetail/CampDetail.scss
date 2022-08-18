@@ -1,0 +1,44 @@
+.CampDetail {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    .map {
+        padding: 30px;
+        border: 1px solid rgb(232, 232, 232);
+        border-radius: 10px;
+    }
+    .content {
+        padding: 30px;
+        border: 1px solid rgb(232, 232, 232);
+        border-radius: 10px;
+        .image {
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+        .main-content {
+            margin-bottom: 20px;
+            p {
+                line-height: 1.5;
+                color: rgb(94, 94, 94);
+                text-align: justify;
+            }
+        }
+        .submitter {
+            p {
+                color: rgb(94, 94, 94);
+                font-style: italic;
+            }
+        }
+    }
+}
